@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>End Stream Credits</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    .credits-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .credits {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: scroll-up 60s linear infinite;
+      font-size: 24px;
+    }
+
+    @keyframes scroll-up {
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+
+    .credit-item {
+      margin: 20px 0;
+    }
+
+    .thanks {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <div class="credits-container">
+    <div class="credits">
+      <div class="thanks">Terima Kasih Telah Menonton!</div>
+      <div class="credit-item">Host: Indra</div>
+      <div class="credit-item">Support: @saweria.co/indra</div>
+      <div class="credit-item">Follow TikTok & YouTube!</div>
+      <div class="credit-item">Special Thanks:</div>
+      <div class="credit-item">- Viewers Setia</div>
+      <div class="credit-item">- Donatur Dermawan</div>
+      <div class="credit-item">- Teman-teman Discord</div>
+      <div class="credit-item">See you next stream!</div>
+    </div>
+  </div>
+</body>
+</html>
